@@ -90,6 +90,7 @@ const Login = ({ navigation }: any) => {
           <Text style={styles.label}>Email</Text>
           <TextInput
             placeholder="email@email.com"
+            placeholderTextColor='black'
             keyboardType="email-address"
             autoCapitalize="none"
             value={email}
@@ -118,8 +119,9 @@ const Login = ({ navigation }: any) => {
           >
             <TextInput
               placeholder="Password"
+              placeholderTextColor='black'
               secureTextEntry={secureText}
-              style={[{ flex: 1, paddingLeft: 12 }]}
+              style={[{ flex: 1, paddingLeft: 12, color:'black' }]}
               value={password}
               onChangeText={text => {
                 setPasseword(text);
@@ -261,6 +263,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.05,
     shadowRadius: 4,
+    color:'black'
   },
   inputContainer: {
     backgroundColor: '#fff',
